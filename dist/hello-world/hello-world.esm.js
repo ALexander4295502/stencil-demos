@@ -1,0 +1,1 @@
+import{p as o,b as e}from"./p-2fb4d904.js";(()=>{const e=import.meta.url,m={};return""!==e&&(m.resourcesUrl=new URL(".",e).href),o(m)})().then((o=>e([["p-dfcb8db1",[[0,"my-name",null,[[0,"onToggle","log"]]],[4,"my-dropdown",{title:[1],toggle:[32],someType:[16]}]]]],o)));

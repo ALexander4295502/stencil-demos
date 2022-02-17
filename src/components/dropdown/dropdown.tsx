@@ -1,4 +1,5 @@
 import { Component, Event, EventEmitter, Prop, State } from '@stencil/core';
+import { SomeInterface } from 'src/types/type';
 
 @Component({
   tag: 'my-dropdown',
@@ -7,6 +8,7 @@ import { Component, Event, EventEmitter, Prop, State } from '@stencil/core';
 export class Dropdown {
   @Prop() title: string = '';
   @Prop() @State() toggle: boolean = false;
+  @Prop() someType: SomeInterface;
   @Event() onToggle: EventEmitter;
 
   render() {
@@ -15,7 +17,6 @@ export class Dropdown {
         <button onClick={() => this.toggleClick()}>
           {this.title} {this.toggle ? <span>&#9650;</span> : <span>&#9660;</span>}
         </button>
-
         <div style={{ display: this.toggle ? 'block' : 'none' }}>
           <slot></slot>
         </div>

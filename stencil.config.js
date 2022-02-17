@@ -1,12 +1,12 @@
 exports.config = {
-  namespace: 'index',
+  namespace: 'mycomponent',
+  outputTargets:[
+    { type: 'dist' },
+    { type: 'www' }
+  ],
+  namespace: 'hello-world',
   generateDistribution: true,
-  bundles: [
-    {
-      components: ['my-name'],
-      components: ['my-dropdown']
-    }
-  ]
+  generateWWW: false
 };
 
 exports.devServer = {

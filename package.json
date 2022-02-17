@@ -18,9 +18,10 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "0.0.6"
+    "@stencil/core": "latest"
   },
   "devDependencies": {
+    "@stencil/core": "latest",
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
     "@types/jest": "^21.1.1",
